@@ -36,7 +36,7 @@
             <label><input type="checkbox" name="continueCalculation"> Continue rendering</label>
           </p>
           <p><b>Mode</b><br>
-            <label><input name="mode" type="radio" value="baseline" checked> Baseline<label><br>
+            <label><input name="mode" type="radio" value="baseline"> Baseline<label><br>
             <label><input name="mode" type="radio" value="explicitDirection"> Explicit direction to light<label><br>
             <label><input name="mode" type="radio" value="mixed"> Multiple Importance Sampling<label>
           </p>
@@ -459,7 +459,7 @@
         let iterationCount = 0
         let state = {
           continueCalculation: false,
-          mode: 'baseline'
+          mode: 'mixed'
         }
 
         const loadShader = (type, source) => {
